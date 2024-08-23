@@ -5,6 +5,7 @@
     padding: 0;
     font-family: open sans;
     font-size: 16px;
+    user-select: none;
 
 }
 .container{
@@ -31,14 +32,20 @@ h2{
 .container input , button{
     width: 95%;
     height: 2.8vw;
+    border: none;
+    background-color: rgba(126, 122, 122, 0.4);
     margin-bottom: 1.2vw;
     border-radius: 8px;
 
 }
 .container input::placeholder{
-    color: rgb(119, 116, 116);
+    color:rgb(127, 133, 138);
     text-align: center;
     font-size: 20px;
+}
+.container input:hover{
+    border: none;
+    cursor: pointer;
 }
 .container button{
     background-color: crimson;
@@ -54,8 +61,12 @@ h2{
     gap: 10px;
     padding: 2vw;
     margin-bottom: 1vw;
+    color: #432000;
 }
-
+button:hover{
+    background-color: #432000;
+    cursor: pointer;
+}
 .shopping-list li{
     display: block;
     border: 1px solid lightgray;
@@ -64,6 +75,11 @@ h2{
     text-align: center;
     flex-grow: 1;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shopping-list li:hover{
+    background-color: #FFEC77;
+    cursor: pointer;
 }
 .clear{
     background-color: crimson;
