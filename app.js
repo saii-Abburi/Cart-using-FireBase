@@ -1,5 +1,5 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
-import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 
 const appSettings = {
     databaseURL: "https://real-time-database-4a07b-default-rtdb.asia-southeast1.firebasedatabase.app/"
@@ -14,7 +14,7 @@ const addButtonEl = document.getElementById("addtocart")
 const shoppingListEl = document.getElementById("shopping-list")
 
 addButtonEl.addEventListener("click", function () {
-    let inputValue = inputFieldEl.value
+    let inputValue = inputFieldEl.value;
 
     push(shoppingListInDB, inputValue)
 
@@ -86,3 +86,5 @@ function appendItemToShoppingListEl(item) {
 
     shoppingListEl.append(newEl)
 }
+
+
